@@ -1,0 +1,9 @@
+namespace AgricultureApp.Views;
+
+public partial class ShedView : ContentPage
+{
+	public ShedView()
+	{
+		InitializeComponent();
+	}
+}

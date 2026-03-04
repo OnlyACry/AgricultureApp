@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AgricultureApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:v="clr-namespace:AgricultureApp.Views"    
+    Title="AgricultureApp"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarBackgroundColor="White"
+    Shell.TabBarTitleColor="#1ED488"
+    Shell.TabBarForegroundColor="#1ED488"
+    Shell.TabBarUnselectedColor="Gray"
+    >
+    <!--//v设置了路径-->
+    <!--不设置任务栏-->
+    <TabBar>
+        <ShellContent
+            Title="农场"
+            ContentTemplate="{DataTemplate v:FarmView}"    
+            Icon = "fields.png" />
+        <ShellContent
+            Title="大棚"
+            ContentTemplate="{DataTemplate v:ShedView}"    
+            Icon = "shed.png" />
+        <ShellContent
+            Title="我的"
+            ContentTemplate="{DataTemplate v:MyView}"    
+            Icon = "farmer.png" />    
+
+    </TabBar>
+    
+
+</Shell>
