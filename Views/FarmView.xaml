@@ -162,6 +162,13 @@
             <CollectionView ItemsSource="{Binding MonitorList}"
                             ItemsLayout="VerticalGrid,2"
                             Margin="10,5">
+                <CollectionView.Footer>
+                    <Label Text="--没有更多了--"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="10"
+                           TextColor="#888"/>
+                </CollectionView.Footer>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame Padding="0"
